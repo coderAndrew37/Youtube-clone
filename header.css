@@ -1,0 +1,152 @@
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;;
+  background-color: rgb(225, 235, 226);
+  border-bottom: 1px solid rgb(226, 213, 213);
+}
+.left-section{
+  width: 150px;
+  align-items: center;
+  display: flex;
+  
+  flex-shrink: 0px;
+}
+
+.search-image,
+.voice-search-image{
+  height: 25px;
+
+}
+.voice-search-button{
+  border-radius:15px;
+  border: none;
+  position: relative;
+}
+
+.voice-tooltip,
+.notifications-tooltip,
+.youtube-apps-tooltip{
+  position: absolute;
+  bottom: -20px;
+  padding: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15;
+  white-space: nowrap;
+  
+}
+
+.voice-search-button:hover .voice-tooltip,
+.notifications-div:hover .notifications-tooltip,
+.upload-div:hover .upload-tooltip,
+.youtube-apps-div:hover .youtube-apps-tooltip{
+  opacity: 1;
+  
+}
+.search-button,
+.voice-search-button{
+  background-color: rgba(218, 203, 203, 0.951);
+  border: 1px solid gray;
+  margin-left: -1px;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-tooltip,
+.upload-tooltip{
+  position: absolute;
+  padding: 4px;
+  border-radius: 3px;
+  bottom: -20px;
+  opacity: 0;
+  color: rgb(15, 1, 1);
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.search-button:hover .search-tooltip{
+  opacity: 1;
+  
+  cursor: pointer;
+}
+.search-bar{
+  flex: 1;
+  height: 30px;
+  font-size: 16px;
+  border: 1px solid rgb(228, 225, 225);
+  border-radius: 3px;
+  width: 0;
+  box-shadow: inset 1px 2px 5px rgba(rgb(233, 229, 229), green, blue, alpha);
+}
+.search-bar::placeholder{
+  font-size: 16px;
+}
+.middle-section{
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 40px;
+  flex: 1;
+  max-width: 500px;
+  
+}
+.amazon-logo{
+  width: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.amazon-logo2{
+  width: 80px;
+}
+.right-section{
+  display: flex;
+  align-items: center;
+  width: 150px;
+  
+  margin-right: 20px;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.upload-icon{
+  height: 20px;
+}
+.youtube-apps-icon{
+  height: 20px;
+}
+
+
+.notifications-icon{
+  height: 20px;
+}
+
+.notifications-div{
+  position: relative;
+  cursor: pointer;
+}
+
+.notifications-number{
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  border-radius: 10px;
+  background-color: red;
+  font-size: 11px;
+  padding: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.channel-icon{
+  border-radius: 30px;
+  width: 30px;
+}
